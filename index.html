@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Backyard Life — Landscape & Hardscape Design-Build in Southern Utah</title>
+<meta name="description" content="Transform your Southern Utah backyard into an outdoor living space you'll never want to leave. Free design consultations from St. George's trusted local landscape & hardscape experts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
+<style>
+/* ====== RESET & BASE ====== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  color: #3d2e1f;
+  background: #faf7f2;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* ====== TYPOGRAPHY ====== */
+h1, h2, h3, h4, h5 { font-family: 'Playfair Display', Georgia, serif; font-weight: 600; line-height: 1.25; }
+h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
+h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
+h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
+p { font-size: 1.05rem; }
+
+/* ====== COLOR TOKENS ====== */
+:root {
+  --sandstone: #e8dcc8;
+  --sandstone-light: #f5f0e6;
+  --terracotta: #c2613a;
+  --terracotta-hover: #a8512e;
+  --terracotta-light: #e87a50;
+  --sage: #7a8c6e;
+  --sage-dark: #5f6e54;
+  --warm-white: #faf7f2;
+  --warm-cream: #f0e9dc;
+  --text-dark: #3d2e1f;
+  --text-mid: #6b5a48;
+  --text-light: #8c7b69;
+  --gold-accent: #c9a84c;
+}
+
+/* ====== UTILITIES ====== */
+.container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+.section-pad { padding: 80px 0; }
+@media (max-width: 768px) { .section-pad { padding: 56px 0; } }
+.text-center { text-align: center; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+/* ====== FADE-IN ANIMATION ====== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====== CTA BUTTONS ====== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--terracotta);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 16px 36px;
+  border-radius: 8px;
+  transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+  box-shadow: 0 4px 16px rgba(194, 97, 58, 0.25);
+  letter-spacing: 0.01em;
+}
+.btn-primary:hover, .btn-primary:focus-visible {
+  background: var(--terracotta-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(194, 97, 58, 0.35);
+}
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: 2px solid rgba(255,255,255,0.7);
+  transition: background 0.25s, border-color 0.25s;
+}
+.btn-secondary:hover, .btn-secondary:focus-visible {
+  background: rgba(255,255,255,0.15);
+  border-color: #fff;
+}
+.btn-small {
+  padding: 12px 24px;
+  font-size: 0.95rem;
+}
+
+/* ====== STICKY HEADER ====== */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: rgba(250, 247, 242, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(61,46,31,0.08);
+  transition: box-shadow 0.3s;
+}
+.site-header.scrolled {
+  box-shadow: 0 2px 20px rgba(61,46,31,0.1);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  gap: 16px;
+}
+.header-logo {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--terracotta);
+  white-space: nowrap;
+}
+.header-phone svg { flex-shrink: 0; }
+.header-cta {
+  background: var(--terracotta);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background 0.25s;
+  white-space: nowrap;
+}
+.header-cta:hover { background: var(--terracotta-hover); }
+
+@media (max-width: 600px) {
+  .header-phone-text { display: none; }
+  .header-cta { font-size: 0.8rem; padding: 9px 14px; }
+  .header-logo { font-size: 1.15rem; }
+}
+
+/* ====== HERO ====== */
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 24px 80px;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: #3d2e1f;
+  z-index: 0;
+}
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.5) 100%);
+}
+.hero-img-label {
+  position: absolute;
+  bottom: 20px; right: 24px;
+  background: rgba(0,0,0,0.45);
+  color: rgba(255,255,255,0.7);
+  font-size: 0.75rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  text-align: center;
+  color: #fff;
+}
+.hero-content h1 {
+  margin-bottom: 20px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+.hero-content h1 em {
+  font-style: italic;
+  color: var(--sandstone);
+}
+.hero-sub {
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  color: rgba(255,255,255,0.88);
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* ====== TRUST BAR ====== */
+.trust-bar {
+  background: var(--warm-cream);
+  border-top: 1px solid rgba(61,46,31,0.06);
+  border-bottom: 1px solid rgba(61,46,31,0.06);
+  padding: 32px 24px;
+}
+.trust-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+}
+.trust-number {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--terracotta);
+}
+.trust-label {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  font-weight: 500;
+}
+
+/* ====== PROBLEM / AGITATION ====== */
+.problem-section {
+  background: var(--warm-white);
+}
+.problem-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.problem-inner h2 {
+  margin-bottom: 24px;
+}
+.problem-inner p {
+  color: var(--text-mid);
+  margin-bottom: 16px;
+}
+.problem-inner p:last-of-type {
+  margin-bottom: 32px;
+}
+.problem-highlight {
+  background: var(--warm-cream);
+  border-left: 4px solid var(--terracotta);
+  padding: 24px 28px;
+  border-radius: 0 8px 8px 0;
+  margin: 32px 0;
+  font-style: italic;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* ====== SERVICES ====== */
+.services-section {
+  background: var(--warm-cream);
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.service-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(61,46,31,0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(61,46,31,0.1);
+}
+.service-img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+.service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.service-card-body {
+  padding: 24px 24px 28px;
+  text-align: center;
+}
+.service-card h3 { color: var(--text-dark); margin-bottom: 10px; }
+.service-card p { color: var(--text-mid); font-size: 0.95rem; }
+
+/* ====== PROCESS ====== */
+.process-section { background: var(--warm-white); }
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+.step {
+  text-align: center;
+  position: relative;
+  padding: 0 12px;
+}
+.step-number {
+  width: 56px; height: 56px;
+  background: var(--terracotta);
+  color: #fff;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+.step h3 { margin-bottom: 8px; font-size: 1.2rem; }
+.step p { color: var(--text-mid); font-size: 0.95rem; }
+
+/* ====== SOCIAL PROOF ====== */
+.testimonials-section { background: var(--warm-cream); }
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  margin-top: 48px;
+}
+.testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 2px 16px rgba(61,46,31,0.06);
+}
+.testimonial-stars {
+  color: var(--gold-accent);
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+.testimonial-quote {
+  font-style: italic;
+  color: var(--text-dark);
+  font-size: 1.02rem;
+  margin-bottom: 20px;
+  line-height: 1.75;
+}
+.testimonial-author {
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+.testimonial-location {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+/* ====== TRANSFORMATION GALLERY ====== */
+.gallery-section { background: var(--warm-white); }
+.gallery-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+.gallery-step { display: flex; flex-direction: column; }
+.gallery-single {
+  aspect-ratio: 4/3;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(61,46,31,0.08);
+}
+.gallery-single img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.gallery-single.before {
+  background: linear-gradient(135deg, #a89279 0%, #8c7b69 100%);
+}
+.gallery-single.design {
+  background: linear-gradient(135deg, #5a7a8c 0%, #7a9aac 50%, #a8c5b8 100%);
+}
+.gallery-single.after {
+  background: linear-gradient(135deg, #c2613a 0%, #c9a84c 50%, #7a8c6e 100%);
+}
+.gallery-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 12px;
+  border-radius: 4px;
+}
+.gallery-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+/* ====== FAQ ====== */
+.faq-section { background: var(--warm-cream); }
+.faq-list {
+  max-width: 760px;
+  margin: 48px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 8px rgba(61,46,31,0.05);
+}
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: left;
+  background: #fff;
+  transition: background 0.2s;
+  gap: 16px;
+}
+.faq-question:hover { background: var(--sandstone-light); }
+.faq-icon {
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--sandstone-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, background 0.3s;
+  font-size: 1.1rem;
+  color: var(--terracotta);
+}
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+  background: var(--terracotta);
+  color: #fff;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 24px;
+}
+.faq-item.open .faq-answer {
+  max-height: 400px;
+  padding: 0 24px 24px;
+}
+.faq-answer p {
+  color: var(--text-mid);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+/* ====== LEAD FORM (JOBBER EMBED) ====== */
+.form-section {
+  background: linear-gradient(180deg, var(--warm-white) 0%, var(--warm-cream) 100%);
+}
+.form-wrapper {
+  max-width: 620px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 48px 40px;
+  box-shadow: 0 8px 40px rgba(61,46,31,0.08);
+  margin-top: 40px;
+}
+@media (max-width: 600px) {
+  .form-wrapper { padding: 32px 20px; }
+}
+.form-reassurance {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* ====== FINAL CTA ====== */
+.final-cta {
+  position: relative;
+  padding: 80px 24px;
+  text-align: center;
+  overflow: hidden;
+}
+.final-cta-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #5f4535 0%, #7a4a30 30%, #c2613a 70%, #c9a84c 100%);
+  z-index: 0;
+}
+.final-cta-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.18);
+}
+.final-cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin: 0 auto;
+  color: #fff;
+}
+.final-cta-content h2 {
+  margin-bottom: 16px;
+}
+.final-cta-content p {
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 32px;
+  font-size: 1.1rem;
+}
+.final-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+.final-cta-phone {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.95);
+}
+.final-cta-phone:hover { color: #fff; }
+
+/* ====== FOOTER ====== */
+.site-footer {
+  background: #3d2e1f;
+  color: rgba(255,255,255,0.65);
+  padding: 40px 24px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.footer-name {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.85);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+.footer-areas {
+  margin: 8px 0;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+.footer-phone {
+  color: var(--terracotta-light);
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 12px 0;
+}
+.footer-phone:hover { color: var(--terracotta); }
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .hero { min-height: 85vh; padding: 100px 20px 60px; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-trio { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 500px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr 1fr; }
+  .hero-buttons { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- ====== STICKY HEADER ====== -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <div class="header-logo" aria-label="The Backyard Life">The Backyard Life</div>
+    <div class="header-right">
+      <a href="tel:4359225472" class="header-phone" aria-label="Call us at (435) 922-5472">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <span class="header-phone-text">(435) 922-5472</span>
+      </a>
+      <a href="#consultation-form" class="header-cta">Free Consultation</a>
+    </div>
+  </div>
+</header>
+
+<!-- ====== HERO ====== -->
+<section class="hero" role="region" aria-label="Welcome">
+  <div class="hero-bg" role="img" aria-label="Beautiful backyard with pool, landscaping, and red rock cliffs in Southern Utah">
+    <img src="images/hero.jpg" alt="Beautiful outdoor living space in Southern Utah">
+  </div>
+  <div class="hero-content fade-in">
+    <h1>Your Backyard Should Be Your <em>Favorite</em> Room</h1>
+    <p class="hero-sub">We design and build outdoor living spaces that make Southern Utah evenings unforgettable — from first sketch to final stone.</p>
+    <div class="hero-buttons">
+      <a href="#consultation-form" class="btn-primary">Get Your Free Design Consultation</a>
+      <a href="tel:4359225472" class="btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (435) 922-5472
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== TRUST BAR ====== -->
+<div class="trust-bar" role="region" aria-label="Credentials">
+  <div class="trust-grid">
+    <div class="trust-item fade-in">
+      <span class="trust-number">3,000</span>
+      <span class="trust-label">Projects Completed</span>
+    </div>
+    <div class="trust-item fade-in">
+      <span class="trust-number">75</span>
+      <span class="trust-label">Years Combined Experience</span>
+    </div>
+    <div class="trust-item fade-in">
+      <span class="trust-number">290+</span>
+      <span class="trust-label">Five Star Reviews</span>
+    </div>
+    <div class="trust-item fade-in">
+      <span class="trust-number">100%</span>
+      <span class="trust-label">Customer Satisfaction</span>
+    </div>
+  </div>
+</div>
+
+<!-- ====== PROBLEM / AGITATION ====== -->
+<section class="problem-section section-pad" role="region" aria-label="Why your backyard matters">
+  <div class="container">
+    <div class="problem-inner text-center fade-in">
+      <h2>You Didn't Move to Southern Utah to Stay Inside</h2>
+      <p>You've got 300 days of sunshine, red rock views, and evening skies that belong in a painting. But if your backyard is still bare dirt, patchy gravel, or a dated layout that doesn't work — you're missing out on the best part of living here.</p>
+      <p>Maybe you've been meaning to do something about it for months. Maybe you've called a couple of contractors who never followed up, or got bids that left you more confused than confident. Maybe you're just not sure where to start.</p>
+      <div class="problem-highlight">
+        "We hear it all the time: 'We love our home, but our backyard doesn't match the life we want to live.' That's exactly where we come in."
+      </div>
+      <p>The Backyard Life is a local, owner-operated design-build company. That means one team handles your project from the first conversation to the final walkthrough — no middlemen, no finger-pointing, no surprises. We know the desert soil, the HOA rules, the permitting process, and which materials hold up when it's 115° in July.</p>
+      <a href="#consultation-form" class="btn-primary">Let's Talk About Your Backyard</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SERVICES ====== -->
+<section class="services-section section-pad" role="region" aria-label="Our services">
+  <div class="container">
+    <div class="text-center fade-in">
+      <h2>What We Build</h2>
+      <p style="color: var(--text-mid); max-width: 560px; margin: 12px auto 0;">Every project is custom-designed for your space, your style, and the Southern Utah climate.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="images/svc-transformations.jpg" alt="Full backyard transformation with pool, patio, and landscaping in Southern Utah" loading="lazy">
+        </div>
+        <div class="service-card-body">
+          <h3>Full Backyard Transformations</h3>
+          <p>Complete outdoor living design — patios, landscaping, lighting, fire features, seating walls, and xeriscaping. One vision, one team, one beautiful result.</p>
+        </div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="images/svc-landscape.jpg" alt="Desert-adapted landscaping with turf and plantings in Southern Utah" loading="lazy">
+        </div>
+        <div class="service-card-body">
+          <h3>Landscape</h3>
+          <p>Desert-adapted plantings, xeriscaping, boulder work, drip irrigation, and turf — designed to thrive in Southern Utah with minimal maintenance and maximum curb appeal.</p>
+        </div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="images/svc-concrete.jpg" alt="Custom concrete flatwork being poured in Southern Utah" loading="lazy" style="object-position: center 75%;">
+        </div>
+        <div class="service-card-body">
+          <h3>Concrete Flatwork</h3>
+          <p>Driveways, walkways, pool decks, and custom slabs — poured and finished to last in the Southern Utah climate. Clean lines, solid foundations, no shortcuts.</p>
+        </div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="images/svc-patio-covers.jpg" alt="Alumawood patio cover installation in Southern Utah" loading="lazy">
+        </div>
+        <div class="service-card-body">
+          <h3>Patio Covers</h3>
+          <p>Alumawood, solid roof, and pergola-style covers that turn your patio into a year-round living space — shade in summer, shelter in every season.</p>
+        </div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="images/svc-outdoor-kitchens.jpg" alt="Custom outdoor kitchen with built-in grill in Southern Utah" loading="lazy">
+        </div>
+        <div class="service-card-body">
+          <h3>Outdoor Kitchens</h3>
+          <p>Built-in grills, countertops, bars, and full cook stations designed for the way you actually entertain — from weeknight dinners to neighborhood cookouts.</p>
+        </div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-img">
+          <img src="images/svc-fire-features.jpg" alt="Custom fire feature with outdoor seating area at dusk in Southern Utah" loading="lazy">
+        </div>
+        <div class="service-card-body">
+          <h3>Fire Features</h3>
+          <p>Custom fire pits, fire tables, and full outdoor fireplaces. The centerpiece of every great backyard gathering — from cool desert evenings to holiday parties.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PROCESS ====== -->
+<section class="process-section section-pad" role="region" aria-label="Our process">
+  <div class="container">
+    <div class="text-center fade-in">
+      <h2>How It Works</h2>
+      <p style="color: var(--text-mid); max-width: 520px; margin: 12px auto 0;">We handle everything so you can skip the stress and go straight to enjoying the result.</p>
+    </div>
+    <div class="process-steps">
+      <div class="step fade-in">
+        <div class="step-number" aria-hidden="true">1</div>
+        <h3>Conversation</h3>
+        <p>We visit your property, listen to your ideas, and learn how you want to use your space. No pressure, no sales pitch.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-number" aria-hidden="true">2</div>
+        <h3>Custom Design</h3>
+        <p>You'll see a detailed plan before a single shovel hits the ground — so you can feel confident about every detail.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-number" aria-hidden="true">3</div>
+        <h3>Expert Build</h3>
+        <p>Our crew brings your design to life. We handle materials, permitting, HOA coordination — all of it.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-number" aria-hidden="true">4</div>
+        <h3>Enjoy</h3>
+        <p>Pour yourself a drink, invite the neighbors over, and finally use your backyard the way you've always imagined.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== TESTIMONIALS ====== -->
+<section class="testimonials-section section-pad" role="region" aria-label="Customer testimonials">
+  <div class="container">
+    <div class="text-center fade-in">
+      <h2>What Your Neighbors Are Saying</h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testimonial-quote">"We'd been putting off the backyard for two years after our home was built. The Backyard Life made it painless — they handled our HOA paperwork, showed up when they said they would, and the final result is even better than the design. We practically live outside now."</p>
+        <p class="testimonial-author">Mark &amp; Susan T.</p>
+        <p class="testimonial-location">Desert Hills, St. George</p>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testimonial-quote">"After getting three bids that were all over the place, we went with The Backyard Life because they actually listened. They understood we wanted a low-maintenance space we could enjoy with the grandkids. The fire pit area is everyone's favorite spot."</p>
+        <p class="testimonial-author">Janet R.</p>
+        <p class="testimonial-location">Little Valley, Washington</p>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testimonial-quote">"I was worried about the desert heat cracking everything, but they knew exactly which materials to use. Two summers later and our patio looks like the day it was finished. These guys know Southern Utah — it's not just marketing."</p>
+        <p class="testimonial-author">Dave P.</p>
+        <p class="testimonial-location">Kayenta, Ivins</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== TRANSFORMATION GALLERY ====== -->
+<section class="gallery-section section-pad" role="region" aria-label="Project transformation gallery">
+  <div class="container">
+    <div class="text-center fade-in">
+      <h2>See the Transformation</h2>
+      <p style="color: var(--text-mid); max-width: 560px; margin: 12px auto 0;">From blank canvas to custom design to finished backyard — here's how the process comes to life.</p>
+    </div>
+    <div class="gallery-trio">
+      <div class="gallery-step fade-in">
+        <div class="gallery-single before">
+          <img src="images/gallery-before.jpg" alt="On-site consultation — reviewing a bare dirt backyard with the homeowner in Southern Utah" loading="lazy">
+          <span class="gallery-badge">1. Your Backyard Now</span>
+        </div>
+        <p class="gallery-caption">The starting point</p>
+      </div>
+      <div class="gallery-step fade-in">
+        <div class="gallery-single design">
+          <img src="images/gallery-design.jpg" alt="3D design rendering by The Backyard Life showing the planned outdoor living space with pool, patio, fire features, and landscaping" loading="lazy">
+          <span class="gallery-badge">2. Your Custom Design</span>
+        </div>
+        <p class="gallery-caption">See it before we build it</p>
+      </div>
+      <div class="gallery-step fade-in">
+        <div class="gallery-single after">
+          <img src="images/svc-transformations.jpg" alt="Finished backyard transformation with pool, patio cover, outdoor kitchen, turf, and desert landscaping in Southern Utah" loading="lazy">
+          <span class="gallery-badge">3. The Finished Result</span>
+        </div>
+        <p class="gallery-caption">Your new favorite room</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FAQ ====== -->
+<section class="faq-section section-pad" role="region" aria-label="Frequently asked questions">
+  <div class="container">
+    <div class="text-center fade-in">
+      <h2>Questions We Get Asked a Lot</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-in">
+        <button class="faq-question" aria-expanded="false">
+          <span>How long does a typical backyard project take?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <p>It depends on the scope. A simple patio might be 1–2 weeks; a full backyard transformation with fire features, outdoor kitchen, and landscaping typically runs 4–8 weeks. We'll give you a clear timeline during the design phase — and we stick to it.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" aria-expanded="false">
+          <span>What does a project like this cost?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <p>Every backyard is different, so we don't do cookie-cutter pricing. That said, most of our projects fall between $25,000 and $120,000+. A focused patio or fire feature project might start around $15,000–$30,000, while comprehensive transformations with multiple features typically range from $50,000 up. Your free consultation gives you a realistic scope and budget before any commitment.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do you handle HOA approvals and permits?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <p>Yes — and this is one of the biggest reasons homeowners choose us. We know the HOA requirements in most Southern Utah communities and handle the submittal process for you. Same with city permits. You shouldn't have to become an expert on setback requirements just to build a patio.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" aria-expanded="false">
+          <span>What materials hold up best in the desert heat?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <p>We exclusively use materials rated for the extreme temperature swings in Southern Utah — natural stone (travertine, flagstone), high-quality concrete pavers, and desert-adapted plantings. We avoid materials that fade, crack, or shift in our climate. Every material recommendation comes from years of experience building in this specific environment.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do you offer any kind of warranty?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" role="region">
+          <p>Absolutely. We stand behind our work with a comprehensive workmanship warranty. We'll walk you through the specifics during your consultation, but the short version: if something isn't right, we make it right. We're a local company with a local reputation — our name is on every project.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== LEAD CAPTURE FORM (JOBBER) ====== -->
+<section class="form-section section-pad" id="consultation-form" role="region" aria-label="Request a consultation">
+  <div class="container">
+    <div class="text-center fade-in">
+      <h2>Let's Start the Conversation</h2>
+      <p style="color: var(--text-mid); max-width: 520px; margin: 12px auto 0;">Tell us a bit about your project and we'll reach out to schedule your free, no-obligation design consultation.</p>
+    </div>
+    <div class="form-wrapper fade-in">
+      <div id="568eaae2-0022-4ecc-adfe-69f37ff7f8ac-1109358"></div>
+      <script src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js" clienthub_id="568eaae2-0022-4ecc-adfe-69f37ff7f8ac-1109358" form_url="https://clienthub.getjobber.com/client_hubs/568eaae2-0022-4ecc-adfe-69f37ff7f8ac/public/work_request/embedded_work_request_form?form_id=1109358"></script>
+      <p class="form-reassurance">No pressure. No obligation. Just a conversation about what's possible.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FINAL CTA ====== -->
+<section class="final-cta" role="region" aria-label="Schedule your consultation">
+  <div class="final-cta-bg" role="img" aria-label="Desert sunset gradient background"></div>
+  <div class="final-cta-content fade-in">
+    <h2>Southern Utah's Outdoor Season Fills Up Fast</h2>
+    <p>The best time to start planning your backyard is right now. Lock in your spot on our design calendar and be enjoying your new outdoor space before the next wave of perfect evenings rolls in.</p>
+    <div class="final-cta-buttons">
+      <a href="#consultation-form" class="btn-primary">Claim Your Free Consultation</a>
+      <a href="tel:4359225472" class="btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call Now
+      </a>
+    </div>
+    <a href="tel:4359225472" class="final-cta-phone">(435) 922-5472</a>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="site-footer" role="contentinfo">
+  <p class="footer-name">The Backyard Life</p>
+  <p class="footer-areas">Proudly serving St. George · Washington · Hurricane · Ivins · Santa Clara · Leeds · La Verkin · Mesquite, NV</p>
+  <a href="tel:4359225472" class="footer-phone">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    (435) 922-5472
+  </a>
+</footer>
+
+<!-- ====== JAVASCRIPT ====== -->
+<script>
+(function() {
+  'use strict';
+
+  // === STICKY HEADER SHADOW ===
+  const header = document.querySelector('.site-header');
+  function onScroll() {
+    if (window.scrollY > 40) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // === SMOOTH SCROLL FOR ALL ANCHOR LINKS ===
+  document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        var headerHeight = header.offsetHeight;
+        var targetTop = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
+        window.scrollTo({ top: targetTop, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // === INTERSECTION OBSERVER FADE-IN ===
+  var fadeEls = document.querySelectorAll('.fade-in');
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+    fadeEls.forEach(function(el) { observer.observe(el); });
+  } else {
+    fadeEls.forEach(function(el) { el.classList.add('visible'); });
+  }
+
+  // === FAQ ACCORDION ===
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.parentElement;
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
