@@ -689,7 +689,7 @@ p { font-size: 1.05rem; }
   </div>
   <div class="hero-content fade-in">
     <h1>Your Backyard Should Be Your <em>Favorite</em> Room</h1>
-    <p class="hero-sub">We design and build outdoor living spaces that make Southern Utah evenings unforgettable — from first sketch to final stone.</p>
+    <p class="hero-sub">Custom landscaping, hardscaping, and outdoor living design in Southern Utah — from first sketch to finished yard.</p>
     <div class="hero-buttons">
       <a href="#consultation-form" class="btn-primary">Get Your Free Design Consultation</a>
       <a href="tel:4359225472" class="btn-secondary">
@@ -726,7 +726,7 @@ p { font-size: 1.05rem; }
 <section class="problem-section section-pad" role="region" aria-label="Why your backyard matters">
   <div class="container">
     <div class="problem-inner text-center fade-in">
-      <h2>You Didn't Move to Southern Utah to Stay Inside</h2>
+      <h2>You Don't Live in Southern Utah to Stay Inside</h2>
       <p>You've got 300 days of sunshine, red rock views, and evening skies that belong in a painting. But if your backyard is still bare dirt, patchy gravel, or a dated layout that doesn't work — you're missing out on the best part of living here.</p>
       <p>Maybe you've been meaning to do something about it for months. Maybe you've called a couple of contractors who never followed up, or got bids that left you more confused than confident. Maybe you're just not sure where to start.</p>
       <div class="problem-highlight">
@@ -898,61 +898,6 @@ p { font-size: 1.05rem; }
   </div>
 </section>
 
-<!-- ====== FAQ ====== -->
-<section class="faq-section section-pad" role="region" aria-label="Frequently asked questions">
-  <div class="container">
-    <div class="text-center fade-in">
-      <h2>Questions We Get Asked a Lot</h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item fade-in">
-        <button class="faq-question" aria-expanded="false">
-          <span>How long does a typical backyard project take?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer" role="region">
-          <p>It depends on the scope. A simple patio might be 1–2 weeks; a full backyard transformation with fire features, outdoor kitchen, and landscaping typically runs 4–8 weeks. We'll give you a clear timeline during the design phase — and we stick to it.</p>
-        </div>
-      </div>
-      <div class="faq-item fade-in">
-        <button class="faq-question" aria-expanded="false">
-          <span>What does a project like this cost?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer" role="region">
-          <p>Every backyard is different, so we don't do cookie-cutter pricing. That said, most of our projects fall between $25,000 and $120,000+. A focused patio or fire feature project might start around $15,000–$30,000, while comprehensive transformations with multiple features typically range from $50,000 up. Your free consultation gives you a realistic scope and budget before any commitment.</p>
-        </div>
-      </div>
-      <div class="faq-item fade-in">
-        <button class="faq-question" aria-expanded="false">
-          <span>Do you handle HOA approvals and permits?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer" role="region">
-          <p>Yes — and this is one of the biggest reasons homeowners choose us. We know the HOA requirements in most Southern Utah communities and handle the submittal process for you. Same with city permits. You shouldn't have to become an expert on setback requirements just to build a patio.</p>
-        </div>
-      </div>
-      <div class="faq-item fade-in">
-        <button class="faq-question" aria-expanded="false">
-          <span>What materials hold up best in the desert heat?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer" role="region">
-          <p>We exclusively use materials rated for the extreme temperature swings in Southern Utah — natural stone (travertine, flagstone), high-quality concrete pavers, and desert-adapted plantings. We avoid materials that fade, crack, or shift in our climate. Every material recommendation comes from years of experience building in this specific environment.</p>
-        </div>
-      </div>
-      <div class="faq-item fade-in">
-        <button class="faq-question" aria-expanded="false">
-          <span>Do you offer any kind of warranty?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-answer" role="region">
-          <p>Absolutely. We stand behind our work with a comprehensive workmanship warranty. We'll walk you through the specifics during your consultation, but the short version: if something isn't right, we make it right. We're a local company with a local reputation — our name is on every project.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ====== LEAD CAPTURE FORM (JOBBER) ====== -->
 <section class="form-section section-pad" id="consultation-form" role="region" aria-label="Request a consultation">
@@ -1044,21 +989,6 @@ p { font-size: 1.05rem; }
     fadeEls.forEach(function(el) { el.classList.add('visible'); });
   }
 
-  // === FAQ ACCORDION ===
-  document.querySelectorAll('.faq-question').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var item = this.parentElement;
-      var isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(function(openItem) {
-        openItem.classList.remove('open');
-        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-      });
-      if (!isOpen) {
-        item.classList.add('open');
-        this.setAttribute('aria-expanded', 'true');
-      }
-    });
-  });
 
 })();
 </script>
