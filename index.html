@@ -264,12 +264,18 @@ p { font-size: 1.05rem; }
   padding: 32px 24px;
 }
 .trust-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
   justify-content: center;
   gap: 32px 48px;
   max-width: 900px;
   margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .trust-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 24px;
+  }
 }
 .trust-item {
   display: flex;
